@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para cambios de color */
+}
+
+
+
+
+
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: #111112; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto claro */
+}
+
+.fondo_header {
+    background-color: #000080;
+
+}
+
+
+a {
+    color: #9ec5fe !important;
+}
+
+
+.banner {
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.img-fluid {
+
+    margin-left: 50%;
+}
+
+.footer {
+    background-color: #000080;
+    /* Azul marino */
+    color: #f5f5dc;
+    /* Blanco crema */
+    margin-top: 0 !important;
+}
+
+
+.image-section {
+    height: 100%;
+}
+
+
+.card-img-top {
+    height: 200px;
+    /* Altura de las imágenes */
+    object-fit: cover;
+    /* Mantiene la relación de aspecto */
+}
+
+.card-img-top {
+    width: 38%;
+    /* Ajusta el tamaño como desees */
+    margin: 0 auto;
+    /* Centra la imagen */
+}
+
+.boton {
+
+    /* Azul marino */
+    border: 1 ox solid #000080;
+    color: #2b2bdc !important;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+ /* efecto barra de navegacion */
+
+
+.navbar-nav .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #ffffff; /* Color de la línea de la página activa */
+   
+}
+
+
+
+
+.navbar-nav .active::after {
+    width: 100%;
+    left: 0;
+}
+
+
+
+
+
+
+.btn-custom {
+    background-color: transparent;
+    border: 2px solid #003366;
+    /* Azul marino */
+    color: #003366;
+    /* Azul marino */
+}
+
+.btn-custom:hover {
+    background-color: #003366;
+    /* Azul marino */
+    color: white;
+    /* Color del texto al hacer hover */
+}
+
+.form-control {
+    height: 38px;
+    /* Ajusta la altura de los inputs */
+    font-size: 14px;
+    /* Ajusta el tamaño de fuente */
+}
+
+.form-container {
+    max-width: 400px;
+    /* Ancho máximo del formulario */
+    margin: auto;
+    /* Centrar horizontalmente */
+}
+
+
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+    /* Hace el ícono blanco */
+}
+
+.navbar-toggler {
+    border: 1px solid !important;
+    border-color: white;
+    /* Hace el borde blanco */
+    color: white
+}
+
+
+.footer2{
+
+margin-top: 250px !important;
+}
+
+.div2{
+
+margin-top: 250px;
+}
+
+
+@media (max-width: 768px) {
+    /* Estilos para tablets y celulares grandes */
+
+    .img-fluid {
+
+        margin-left: 0%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    /* Estilos para celulares pequeños */
+    .img-fluid {
+
+        margin-left: 0%;
+    }
+
+    .flex-column-reverse {
+        flex-direction: column-reverse; /* Cambiar el orden de la columna en pantallas pequeñas */
+
+}
+}
